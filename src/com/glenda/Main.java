@@ -14,7 +14,7 @@ public class Main {
         ArrayList<Double> priceCharged = new ArrayList<>();
         ArrayList<Double> costToMAke = new ArrayList<>();
         //ArrayList<Double> profit = new ArrayList<>();
-        ArrayList<String> quantidade = new ArrayList<>();
+       // ArrayList<String> quantidade = new ArrayList<>();
 
         //double profit = (costToMAke-priceCharged)*quantidade;
 
@@ -102,7 +102,7 @@ public class Main {
             do {
                 System.out.println("How many " + drink + " drinks did you sell?");
                 String qtdTotalDrinks = scanner.nextLine();
-                quantidade.add(qtdTotalDrinks);
+                //qtddrinksSold.add(qtdTotalDrinks);
                 //Validando o numbera enviado pelo usuario.
                 //Se for menor que zero ou outro valor que não seja
                 // numerido, print uma mensagem de erro e retorna para que

@@ -1,13 +1,12 @@
-mocha Sold 3.0 : Expenses  $1.45, Revenue $3.7Profit 6.75
-cappuccino Sold 3.0 : Expenses  $1.56, Revenue $3.5 Profit 5.82
-espresso Sold 4.0 : Expenses  $0.95, Revenue $1.5 Profit 2.2
-latte Sold 5.0 : Expenses  $1.67, Revenue $3.75 Profit 10.4
-black tea Sold 4.0 : Expenses  $0.35, Revenue $1.79 Profit 5.76
-herbal tea Sold 5.0 : Expenses  $0.35, Revenue $2.09 Profit 8.7
-macchiato Sold 4.0 : Expenses  $1.45, Revenue $2.75 Profit 5.2
-americano Sold 5.0 : Expenses  $0.7, Revenue $2.65 Profit 9.75
-cold press Sold 4.0 : Expenses  $0.5, Revenue $2.5 Profit 8.0
-hot chocolate Sold 5.0 : Expenses  $0.65, Revenue $2.25 Profit 8.0
-coffee Sold 4.0 : Expenses  $0.25, Revenue $1.65 Profit 5.6
-chai tea Sold 5.0 : Expenses  $1.23, Revenue $3.5 Profit 11.35
-mocha Sold 4.0 : Expenses  $1.45, Revenue $3.7 Profit 9.0
+cappuccino Sold 80.0 : Expenses  $1.56, Revenue $3.5 Profit 155.2
+espresso Sold 78.0 : Expenses  $0.95, Revenue $1.5 Profit 42.900000000000006
+latte Sold 7.0 : Expenses  $1.67, Revenue $3.75 Profit 14.56
+black tea Sold 76.0 : Expenses  $0.35, Revenue $1.79 Profit 109.44
+herbal tea Sold 56.0 : Expenses  $0.35, Revenue $2.09 Profit 97.43999999999998
+macchiato Sold 65.0 : Expenses  $1.45, Revenue $2.75 Profit 84.5
+americano Sold 76.0 : Expenses  $0.7, Revenue $2.65 Profit 148.2
+cold press Sold 56.0 : Expenses  $0.5, Revenue $2.5 Profit 112.0
+hot chocolate Sold 45.0 : Expenses  $0.65, Revenue $2.25 Profit 72.0
+coffee Sold 67.0 : Expenses  $0.25, Revenue $1.65 Profit 93.8
+chai tea Sold 78.0 : Expenses  $1.23, Revenue $3.5 Profit 177.06
+mocha Sold 7665.0 : Expenses  $1.45, Revenue $3.7 Profit 17246.25
