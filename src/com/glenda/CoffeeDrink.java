@@ -59,8 +59,9 @@ public class CoffeeDrink {
         return profitMade;
     }
 
-    public void setProfitMade(double profitMade) {
-        this.profitMade = profitMade;
+    public void calculateProfitMade() {
+
+        this.profitMade = (priceCharged - costToMAke)  * qntDrinks;
     }
 
     public Double getQntDrinks() {
@@ -68,7 +69,8 @@ public class CoffeeDrink {
     }
 
     public void setQntDrinks(Double qntDrinks) {
-       this.qntDrinks;
+
+        this.qntDrinks = qntDrinks;
     }
 
     public String toString () {
