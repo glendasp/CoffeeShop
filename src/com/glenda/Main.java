@@ -58,23 +58,24 @@ public class Main {
                     new BufferedReader(fileReader);
 
             while((line = bufferedReader.readLine()) != null) {
-                String firstposition = line.split("\\;")[0];
+                String firstposition = line.split(";")[0];
                 menu.add(firstposition);
                 System.out.println(line);
 
-                String secondposition = line.split("\\;")[1];
+                //Swap this and the next thing around - priceCharged and costToMake are backwards
+                String secondposition = line.split(";")[1];
                 Double temp1 = Double.parseDouble(secondposition);
                 priceCharged.add(temp1);
                 //line = bufReader.readLine();
 
-                String thirdposition = line.split("\\;")[2];
+                String thirdposition = line.split(";")[2];
                 Double temp2 = Double.parseDouble(thirdposition);
                 costToMAke.add(temp2);
                 //line = bufReader.readLine();
 
-                String profittotal = line.split("\\;")[1-2];
-                Double temp3 = Double.parseDouble(profittotal);
-                profit.add(temp3);
+             //   String profittotal = line.split(";")[1-2];
+             //   Double temp3 = Double.parseDouble(profittotal);
+             //   profit.add(temp3);
             }
 
             // Fechando o arquivo
@@ -150,15 +151,20 @@ public class Main {
         latte.setName("Latte");
         latte.setPrice(3.00);
         */
-        CoffeeDrink drink = new CoffeeDrink();
 
-for (int i = 0 ; i < menu.size() ; i++) {
+        for (int i = 0 ; i < menu.size() ; i++) {
 
+            CoffeeDrink drink = new CoffeeDrink();
+
+            //Set the values of the things you know
             drink.setName(menu.get(i));
             drink.setCostToMake(costToMAke.get(i));
             drink.setPriceCharged(priceCharged.get(i));
-            drink.setProfitMade(profit.get(i));
-            drink.setQntDrinks(quantidade.get(i));
+            drink.setQntDrinks(qtddrinksSold.get(i));
+
+            //Now, can figure out profit
+            drink.calculateProfitMade();
+
 
             FileWriter salesReport = new FileWriter ("sales-report.txt", true);
             BufferedWriter bufWriter = new BufferedWriter(salesReport);
