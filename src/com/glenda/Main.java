@@ -151,6 +151,7 @@ public class Main {
 
         for (int i = 0 ; i < menu.size() ; i++) {
 
+
             CoffeeDrink drink = new CoffeeDrink(menu.get(i),costToMAke.get(i),priceCharged.get(i),qtddrinksSold.get(i));
 
             //Set the values of the things you know

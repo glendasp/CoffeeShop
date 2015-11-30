@@ -32,9 +32,13 @@ public class CoffeeDrink {
 
     }
 
-    public double getCostToMAke() {return costToMAke;}
+    public double getCostToMAke() {
+        costToMAke = costToMAke * qntDrinks;
+        return costToMAke;}
 
-    public double getPriceCharged() {return priceCharged;}
+    public double getPriceCharged() {
+        priceCharged = priceCharged * qntDrinks;
+        return priceCharged;}
 
     public void setName(String name) {
 
@@ -51,6 +55,7 @@ public class CoffeeDrink {
     }
 
     public void setPriceCharged(double priceCharged) {
+
         this.priceCharged = priceCharged;
     }
 
