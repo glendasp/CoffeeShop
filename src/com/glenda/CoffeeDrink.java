@@ -22,12 +22,11 @@ public class CoffeeDrink {
     //Constructor
     public CoffeeDrink(){}
 
-    public CoffeeDrink(String name, double costtomake , double priceCharged, double profitMade, Double qntDrinks) {
+    public CoffeeDrink(String name, double costtomake , double priceCharged, double qntDrinks) {
 
         this.nameOfDrink = name;
         this.costToMAke = costtomake;
         this.priceCharged = priceCharged;
-        this.profitMade = profitMade;
         this.qntDrinks = qntDrinks;
 
 

@@ -13,7 +13,7 @@ public class Main {
         ArrayList<Double> qtddrinksSold = new ArrayList<>();
         ArrayList<Double> priceCharged = new ArrayList<>();
         ArrayList<Double> costToMAke = new ArrayList<>();
-        ArrayList<Double> profit = new ArrayList<>();
+        //ArrayList<Double> profit = new ArrayList<>();
         ArrayList<String> quantidade = new ArrayList<>();
 
         //double profit = (costToMAke-priceCharged)*quantidade;
@@ -65,12 +65,12 @@ public class Main {
                 //Swap this and the next thing around - priceCharged and costToMake are backwards
                 String secondposition = line.split(";")[1];
                 Double temp1 = Double.parseDouble(secondposition);
-                priceCharged.add(temp1);
+                costToMAke.add(temp1);
                 //line = bufReader.readLine();
 
                 String thirdposition = line.split(";")[2];
                 Double temp2 = Double.parseDouble(thirdposition);
-                costToMAke.add(temp2);
+                priceCharged.add(temp2);
                 //line = bufReader.readLine();
 
              //   String profittotal = line.split(";")[1-2];
@@ -154,16 +154,18 @@ public class Main {
 
         for (int i = 0 ; i < menu.size() ; i++) {
 
-            CoffeeDrink drink = new CoffeeDrink();
+            CoffeeDrink drink = new CoffeeDrink(menu.get(i),costToMAke.get(i),priceCharged.get(i),qtddrinksSold.get(i));
 
             //Set the values of the things you know
+            /*
             drink.setName(menu.get(i));
             drink.setCostToMake(costToMAke.get(i));
             drink.setPriceCharged(priceCharged.get(i));
             drink.setQntDrinks(qtddrinksSold.get(i));
+            */
 
             //Now, can figure out profit
-            drink.calculateProfitMade();
+            drink.calculateProfitMade();//Calculando total ganho por cafe
 
 
             FileWriter salesReport = new FileWriter ("sales-report.txt", true);
@@ -174,7 +176,6 @@ public class Main {
         }
 
         //CoffeeDrink latte = new CoffeeDrink("Latte", 3);
-
 
         //You can still call the get and set methods if you need
 
