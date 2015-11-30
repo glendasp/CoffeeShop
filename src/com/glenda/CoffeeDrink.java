@@ -74,9 +74,7 @@ public class CoffeeDrink {
 
     public String toString () {
         return getName()+ " Sold "+ getQntDrinks() +" : Expenses  $" +  getCostToMAke() + ", Revenue $" + getPriceCharged() +
-                "Profit " + getProfitMade()+ "\n";
+                " Profit " + getProfitMade()+ "\n";
     }
-
-
 
 }

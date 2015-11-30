@@ -73,9 +73,6 @@ public class Main {
                 priceCharged.add(temp2);
                 //line = bufReader.readLine();
 
-             //   String profittotal = line.split(";")[1-2];
-             //   Double temp3 = Double.parseDouble(profittotal);
-             //   profit.add(temp3);
             }
 
             // Fechando o arquivo
